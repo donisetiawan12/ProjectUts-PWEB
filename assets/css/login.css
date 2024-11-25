@@ -1,0 +1,295 @@
+:root {
+    --primary: rgb(0, 36, 0);
+    --elemen: rgb(174, 112, 5);
+    --background: white ;
+    --btn: #007120;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', 'sans-serif';
+    background-color: var(--background);
+    color: var(--background);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    background-color: var(--primary);
+    border-bottom: 2px solid rgb(223, 142, 4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    color: var(--background);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.navbar .navbar-logo span{
+    color: var(--elemen);
+}
+
+.navbar .navbar-nav a {
+    color: var(--elemen);
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover{
+  color: var(--background);
+}
+
+.navbar .navbar-nav a::after{
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--background);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a{
+    font-size: 2rem;
+    color: var(--elemen);
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra .sign-in{
+    color: var(--primary);
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0 0.1rem;
+    border: 1px solid var(--primary);
+    width: 7rem;
+    height: 3rem;
+    background-color: var(--elemen);
+    font-weight: 600;
+    text-align: center;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    transition: 0.2s;
+}
+.navbar .navbar-extra .sign-up{
+    color: var(--primary);
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0 0.1rem;
+    border: 1px solid var(--primary);
+    width: 7rem;
+    height: 3rem;
+    background-color: var(--elemen);
+    font-weight: 600;
+    text-align: center;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    transition: 0.2s;
+}
+
+.navbar .navbar-extra .sign-in:hover{
+    box-shadow: 2px 2px 2px var(--background);
+    transform: scaleX(1.1);
+    color: var(--primary);
+}
+.navbar .navbar-extra .sign-up:hover{
+    box-shadow: 2px 2px 2px var(--background);
+    transform: scaleX(1.1);
+    color: var(--primary);
+}
+
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/bg\ butbut.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/bg\ butbut.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.login {
+    min-height: 100vh;
+    padding: 8rem 7% 1.4rem;
+}
+
+.card {
+    margin: 0 5rem;
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(0px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.41);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+} 
+
+
+.card .judul {
+    font-size: 3rem;
+    text-align: center;
+    font-family: cursive;
+}
+
+.card h5 {
+    font-size: 0.9rem;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+.card .username {
+    display: flex;
+    margin: 30px;
+}
+
+.card label {
+    font-size: 1.4rem;
+    font-family: 'Times New Roman', Times, serif;
+    }
+
+
+.card .input-text {
+    width: 300px;
+    height: 30px;
+    border-radius: 2rem;
+    margin-left: 30px;
+    backdrop-filter: blur(1px) saturate(200%);
+    -webkit-backdrop-filter: blur(1px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.67);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: white;
+}
+
+.card .username .input-text::placeholder{
+    padding: 0.9rem;
+    color: white;
+}
+
+.card .password .textpw::placeholder{
+    padding: 0.9rem;
+    color: white;
+}
+
+
+.card .password {
+    display: flex;
+    margin: 30px;
+    
+}
+
+ .password label {
+    font-size: 1.4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.password .textpw {
+    width: 300px;
+    height: 30px;
+    border-radius: 2rem;
+    margin-left: 35px;
+    backdrop-filter: blur(1px) saturate(200%);
+    -webkit-backdrop-filter: blur(1px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.67);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: white;
+}
+
+.btn {
+    display: flex;
+    margin: 10px;
+    margin-left: 150px;
+}
+
+.card .btn-login{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background-color: var(--elemen);
+    text-align: center;
+    padding: 0.3rem;
+    margin-left: 17px;
+    border-radius: 2rem;
+    color: var(--elemen);
+    color: var(--primary);
+    font-size: 0.9rem;
+}
+
+footer {
+    height: 10vh;
+    display: flex;
+    padding: 1.3rem;
+    background-color: var(--elemen);
+    justify-content: space-between;
+}
+
+
+footer a {
+    margin: 10px;
+    font-size: 30px;
+    color: black;
+    transition: 0.2s;
+}
+
+footer .facebook:hover {
+    transform: scaleX(1.1);
+    color:#4267B2;
+}
+ 
+footer .instagram:hover{
+    transform: scaleX(1.1);
+    color:#c13584;
+}
+
+footer .github:hover{
+    transform: scaleX(1.1);
+    color:white;
+}
+footer .linkedin:hover{
+    transform: scaleX(1.1);
+    color:#0a66c2;
+}
+
+footer p {
+    text-align: center;
+    color: black;
+    padding: 0.4rem;
+}
+
+
+
+
+
+

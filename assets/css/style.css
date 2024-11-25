@@ -1,0 +1,547 @@
+:root {
+    --primary: rgb(0, 36, 0);
+    --elemen: rgb(174, 112, 5);
+    --background: white ;
+    --btn: #007120;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', 'sans-serif';
+    background-color: var(--background);
+    color: var(--background);
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    background-color: var(--primary);
+    border-bottom: 2px solid rgb(223, 142, 4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+
+    
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    color: var(--background);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.navbar .navbar-logo span{
+    color: var(--elemen);
+}
+
+.navbar .navbar-nav a {
+    color: var(--elemen);
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover{
+  color: var(--background);
+}
+
+.navbar .navbar-nav a::after{
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--background);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a{
+    font-size: 2rem;
+    color: var(--elemen);
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra .sign-in{
+    color: var(--primary);
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0 0.1rem;
+    border: 1px solid var(--primary);
+    width: 7rem;
+    height: 3rem;
+    background-color: var(--elemen);
+    font-weight: 600;
+    text-align: center;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    transition: 0.2s;
+}
+.navbar .navbar-extra .sign-up{
+    color: var(--primary);
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0 0.1rem;
+    border: 1px solid var(--primary);
+    width: 7rem;
+    height: 3rem;
+    background-color: var(--elemen);
+    font-weight: 600;
+    text-align: center;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    transition: 0.2s;
+}
+
+.navbar .navbar-extra .sign-in:hover{
+    box-shadow: 2px 2px 2px var(--background);
+    transform: scaleX(1.1);
+    color: var(--primary);
+}
+.navbar .navbar-extra .sign-up:hover{
+    box-shadow: 2px 2px 2px var(--background);
+    transform: scaleX(1.1);
+    color: var(--primary);
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/bg\ butbut.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.hero .content {
+    margin: 0 4rem;
+    padding: 1.4rem 7%;
+    max-width: 50rem;
+    backdrop-filter: blur(2px) saturate(200%);
+    -webkit-backdrop-filter: blur(2px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.67);
+    border-radius: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+}
+
+.hero .content h1 {
+    font-size: 3rem;
+    color: var(--elemen);
+    font-weight: 800;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.hero .content h2 {
+    font-family: 'Montserrat', 'sans-serif';
+    color: var(--elemen);
+    font-weight: 800;
+    white-space: nowrap;
+    font-size: 2.5rem;
+    overflow: hidden;
+    width: 15ch;
+    animation: typing 3s steps(11, end) infinite alternate ;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 15ch;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+.hero .content p {
+    font-size: 1.4rem;
+    color: var(--background);
+    font-family: 'Montserrat';
+    margin-top: 1rem;
+    font-weight: 100;
+    text-shadow: 1px 1px 3px var(--elemen);
+}
+
+.hero .content .btn-beli {
+    display: inline-block;
+    font-family: 'Montserrat';
+    margin-top: 1rem;
+    border: 1px solid var(--elemen);
+    width: 11rem;
+    height: 3rem;
+    padding: 0.8rem;
+    text-align: center;
+    background-color: var(--elemen);
+    color: var(--primary);
+    border-radius: 3rem;
+    box-shadow: 1px 3px 3px var(--btn);
+}
+
+.about {
+    background-color: var(--primary);
+    padding: 6rem 7% 1.4rem;
+    font-family: 'Montserrat';
+}
+
+
+.about h2 {
+    font-size: 2.6rem;
+    text-align: center;
+    color: var(--elemen);
+    margin-bottom: 5rem;
+}
+
+.about h2 span {
+    color: var(--background);
+}
+
+
+.about .about-main {
+    display: flex;
+}
+
+.about .about-main .about-img img {
+    width: 90%;
+    transition: 0.3s;
+}
+
+.about .about-main .about-img img:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 7px 7px var(--elemen);
+}
+
+
+
+.about .about-content h3{
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--elemen);
+}
+
+.about .about-content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-weight: 100;
+    margin-bottom: 0.8rem;
+}
+
+.about .about-content h4 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--elemen);
+}
+
+.about .about-content ul {
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-bottom: 0.8rem;
+    margin-left: 20px;
+}
+
+
+.menu {
+    height: 100vh;
+    background-color: var(--primary);
+    font-family: 'Montserrat';
+    padding: 6rem 7% 1.4rem;
+}
+
+.menu h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--elemen);
+    font-weight: 700;
+    font-size: 2.6rem;
+}
+
+.menu h2 span {
+    color: var(--background);
+}
+
+.menu p {
+    font-size: 1rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.menu-main {
+    display: flex;
+    
+}
+table {
+     width: 100%;
+    height: 30px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgb(1, 49, 20);
+}
+
+table th {
+    background-color: rgb(1, 55, 23);
+    height: 70px;
+    color: var(--elemen);
+}
+
+table tr td{
+     background-color: var(--primary);
+    color: var(--elemen);
+    font-weight: 600;
+}
+
+table tr td .img1{ 
+    filter: drop-shadow(1px 5px 15px var(--elemen));
+    transition: 0.4s;
+}
+table tr td .img1:hover{ 
+    width: 300px;
+    height: 300px;
+    transform: scale(1.5);
+}
+
+table tr td .img2{ 
+    filter: drop-shadow(1px 15px 15px var(--btn));
+    transition: 0.4s;
+
+}
+
+table tr td .img2:hover{ 
+    width: 300px;
+    height: 300px;
+    transform: scale(1.5);
+}
+
+table tr td .img3{ 
+    filter: drop-shadow(1px 5px 15px var(--background));
+    transition: 0.4s;
+
+}
+
+table tr td .img3:hover{ 
+    width: 300px;
+    height: 300px;
+    transform: scale(1.5);
+}
+
+table tr td a{ 
+    width: 150px;
+    height: 30px;
+    background-color: var(--elemen);
+    display: inline-block;
+    border-radius: 3rem;
+    padding: 0.3rem;
+    color: var(--primary);
+    transition: 0.3s;
+}
+table tr td a:hover{ 
+    transform: scale(1.1);
+    box-shadow: 1px 3px 5px var(--background);
+}
+
+table .khasiat {
+    width: 400px;
+    height: 150px;
+}
+   
+
+.contact {
+    height: 100vh;
+    background-color: var(--primary);
+    padding: 6rem 1.4rem 7%;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Montserrat';
+    color: var(--elemen);
+}
+
+.contact h5 {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 100;
+}
+
+.contact p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+.contact-form form {
+    border: 1px solid black;
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    width: 60rem;
+    margin: 20px auto;
+}
+
+.contact-form .username-email {
+    display: flex;
+    padding: 3.4rem;
+}
+
+.contact-form .username-email input{
+    display: flex;
+    margin: 10px;
+    width: 400px;
+    height: 45px;
+    text-align: center;
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: white;
+    border-radius: 3rem;
+
+}
+
+.contact-form .username-email input::placeholder{
+    color: white;
+}
+.contact-form .no-tlp {
+    margin-top: -30px;
+
+}
+
+.contact-form .no-tlp input{
+   width: 830px;
+   height: 45px;
+   margin-left: 62px;
+   backdrop-filter: blur(0px) saturate(180%);
+   -webkit-backdrop-filter: blur(0px) saturate(180%);
+   background-color: rgba(17, 25, 40, 0.75);
+   border-radius: 12px;
+   border: 1px solid rgba(255, 255, 255, 0.125);
+   color: white;
+   border-radius: 3rem;
+   align-items: center;
+}
+
+.contact-form .no-tlp input::placeholder{
+    color: white;
+    text-align: center;
+}
+
+
+.contact-form .pesan-textarea .tulis {
+    margin: 20px;
+    width: 830px;
+    margin-left: 62px;
+    border-radius: 1rem;
+    height: 10rem;
+    backdrop-filter: blur(0px) saturate(180%);
+   -webkit-backdrop-filter: blur(0px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: white;
+    padding: 4.3rem;
+    text-align: center;
+}
+
+
+.contact-form .btn-sb {
+    margin: 10px;
+}
+
+.contact-form .btn-sb button {
+    width: 150px;
+    height: 30px;
+    background-color: var(--elemen);
+    border-radius: 3rem;
+    margin-left: 300px;
+    color: var(--primary);
+}
+.contact-form .btn-sb .kirim  {
+    width: 150px;
+    height: 30px;
+    background-color: var(--elemen);
+    border-radius: 3rem;
+    margin-left: 17px;
+    color: var(--primary);
+    margin-top: -4px;
+}
+
+
+footer {
+    height: 10vh;
+    display: flex;
+    padding: 1.3rem;
+    background-color: var(--elemen);
+    justify-content: space-between;
+}
+
+
+footer a {
+    margin: 10px;
+    font-size: 30px;
+    color: black;
+    transition: 0.2s;
+}
+
+footer .facebook:hover {
+    transform: scaleX(1.1);
+    color:#4267B2;
+}
+ 
+footer .instagram:hover{
+    transform: scaleX(1.1);
+    color:#c13584;
+}
+
+footer .github:hover{
+    transform: scaleX(1.1);
+    color:white;
+}
+footer .linkedin:hover{
+    transform: scaleX(1.1);
+    color:#0a66c2;
+}
+
+footer p {
+    text-align: center;
+    color: black;
+    padding: 0.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,340 @@
+:root {
+    --primary: rgb(0, 36, 0);
+    --elemen: rgb(174, 112, 5);
+    --background: white ;
+    --btn: #007120;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', 'sans-serif';
+    background-color: var(--background);
+    color: var(--background);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    background-color: var(--primary);
+    border-bottom: 2px solid rgb(223, 142, 4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    color: var(--background);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.navbar .navbar-logo span{
+    color: var(--elemen);
+}
+
+.navbar .navbar-nav a {
+    color: var(--elemen);
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover{
+  color: var(--background);
+}
+
+.navbar .navbar-nav a::after{
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--background);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a{
+    font-size: 2rem;
+    color: var(--elemen);
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra .sign-in{
+    color: var(--primary);
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0 0.1rem;
+    border: 1px solid var(--primary);
+    width: 7rem;
+    height: 3rem;
+    background-color: var(--elemen);
+    font-weight: 600;
+    text-align: center;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    transition: 0.2s;
+}
+.navbar .navbar-extra .sign-up{
+    color: var(--primary);
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0 0.1rem;
+    border: 1px solid var(--primary);
+    width: 7rem;
+    height: 3rem;
+    background-color: var(--elemen);
+    font-weight: 600;
+    text-align: center;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    transition: 0.2s;
+}
+
+.navbar .navbar-extra .sign-in:hover{
+    box-shadow: 2px 2px 2px var(--background);
+    transform: scaleX(1.1);
+    color: var(--primary);
+}
+.navbar .navbar-extra .sign-up:hover{
+    box-shadow: 2px 2px 2px var(--background);
+    transform: scaleX(1.1);
+    color: var(--primary);
+}
+
+
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/bg\ butbut.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+
+.card {
+    margin: 0 5rem;
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(0px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.41);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+} 
+
+
+.card-register {
+    margin: 0 5rem;
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(0px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.41);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.card-register h1 {
+    font-size: 3rem;
+    font-family: cursive;
+    text-align: center;
+}
+
+.card-register .nama-depan {
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    margin: 10px;
+
+}
+
+.card-register input {
+    width: 200px;
+    height: 30px;
+    border-radius: 3rem;
+    backdrop-filter: blur(1px) saturate(200%);
+    -webkit-backdrop-filter: blur(1px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.67);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: white;
+}
+
+.card-register .ind {
+    margin-left: 70px;
+    margin-top: -5px;
+    padding: 0.5rem;
+}
+
+.card-register .ind::placeholder {
+    color: white;
+}
+
+.card-register .ius {
+    margin-left: 20px;
+    margin-top: -5px;
+    padding: 0.5rem;
+}
+
+.card-register .ius::placeholder {
+    color: white;
+}
+
+.card-register .email-register {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+}
+
+.card-register .email-register .iesr {
+    width: 421px;
+    margin-left: 60px;
+}
+
+.card-register .iesr::placeholder {
+    color: white;
+    padding: 0.9rem;
+}
+
+
+.card-register .username-register {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+}
+
+.card-register .username-register .iusr {
+    margin-left: 35px;
+    width: 420px;
+    margin-left: 35px;
+}
+
+.card-register .username-register .iusr::placeholder {
+    padding: 0.9rem;
+    color: white;
+}
+
+.password-register {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+
+.password-register .ipr {
+    width: 421px;
+    margin-left: 37px;
+}
+
+.password-register .ipr::placeholder {
+    padding: 0.9rem;
+    color: white;
+}
+
+
+.no-tlp {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+}
+
+.no-tlp .inp{
+    width: 421px;
+    margin-left: 2px;
+}
+
+.no-tlp .inp::placeholder {
+    padding: 0.9rem;
+    color: white;
+
+}
+
+.card-register .btn-login{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background-color: var(--elemen);
+    text-align: center;
+    padding: 0.3rem;
+    margin-left: 120px;
+    border-radius: 2rem;
+    color: var(--primary);
+    font-size: 0.9rem;
+}
+
+.card-register .btn-registrasi {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+   background-color: var(--elemen);
+    text-align: center;
+    padding: 0.3rem;
+    margin-left: 10px;
+    border-radius: 2rem;
+    color: var(--primary);
+    font-size: 0.9rem;
+}
+
+footer {
+    height: 10vh;
+    display: flex;
+    padding: 1.3rem;
+    background-color: var(--elemen);
+    justify-content: space-between;
+}
+
+
+footer a {
+    margin: 10px;
+    font-size: 30px;
+    color: black;
+    transition: 0.2s;
+}
+
+footer .facebook:hover {
+    transform: scaleX(1.1);
+    color:#4267B2;
+}
+ 
+footer .instagram:hover{
+    transform: scaleX(1.1);
+    color:#c13584;
+}
+
+footer .github:hover{
+    transform: scaleX(1.1);
+    color:white;
+}
+footer .linkedin:hover{
+    transform: scaleX(1.1);
+    color:#0a66c2;
+}
+
+footer p {
+    text-align: center;
+    color: black;
+    padding: 0.4rem;
+}
+
+
+
+
+
+
+

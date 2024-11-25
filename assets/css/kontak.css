@@ -1,0 +1,193 @@
+:root {
+    --primary: rgb(0, 36, 0);
+    --elemen: rgb(174, 112, 5);
+    --background: white ;
+    --btn: #007120;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', 'sans-serif';
+    background-color: var(--background);
+    color: var(--background);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    background-color: var(--primary);
+    border-bottom: 2px solid rgb(223, 142, 4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+
+    
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    color: var(--background);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.navbar .navbar-logo span{
+    color: var(--elemen);
+}
+
+
+.kontak{
+    height: 100vh;
+    padding: 6rem 1.4rem 7%;
+    background-color: var(--primary);
+}
+
+
+.kontak h1 {
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.kontak .kontak-main {
+    margin: 20px auto;
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(0px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.22);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    width: 80%;
+}
+
+ .username {
+    margin: 20px;
+    display: flex;
+    font-size: 25px;
+    margin-bottom: 3rem;
+}
+
+ .titik {
+    margin-left: 100px;
+}
+
+ .username .name {
+    margin-left: 20px;
+}
+
+.email {
+    margin: 20px;
+    display: flex;
+    font-size: 25px;
+    margin-bottom: 3rem;
+}
+
+.email-titik {
+    margin-left: 160px;
+}
+
+.email-name-nya {
+    margin-left: 20px;
+}
+
+.notlp {
+    margin: 20px;
+    display: flex;
+    font-size: 25px;
+    margin-bottom: 3rem;
+}
+
+.titik-tlp {
+    margin-left: 20px;
+}
+
+.no-tlp {
+    margin-left: 20px;
+}
+
+.pesan {
+    margin: 20px;
+    display: flex;
+    font-size: 25px;
+    margin-bottom: 3rem;
+}
+
+.titik-pesan {
+    margin-left: 83px;
+}
+
+.pesan-nya {
+    width: 40rem;
+    margin-left: 20px;
+}
+
+.btn {
+    width: 120px;
+    height: 30px;
+    background-color: var(--elemen);
+    text-align: center;
+    border-radius: 2rem;
+    padding: 0.3rem;
+    margin-bottom: 2rem;
+    margin-left: 280px;
+}
+
+.btn a {
+    color: var(--primary);
+
+}
+
+footer {
+    height: 10vh;
+    display: flex;
+    padding: 1.3rem;
+    background-color: var(--elemen);
+    justify-content: space-between;
+}
+
+
+footer a {
+    margin: 10px;
+    font-size: 30px;
+    color: black;
+    transition: 0.2s;
+}
+
+footer .facebook:hover {
+    transform: scaleX(1.1);
+    color:#4267B2;
+}
+ 
+footer .instagram:hover{
+    transform: scaleX(1.1);
+    color:#c13584;
+}
+
+footer .github:hover{
+    transform: scaleX(1.1);
+    color:white;
+}
+footer .linkedin:hover{
+    transform: scaleX(1.1);
+    color:#0a66c2;
+}
+
+footer p {
+    text-align: center;
+    color: black;
+    padding: 0.4rem;
+}

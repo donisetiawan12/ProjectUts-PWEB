@@ -1,0 +1,169 @@
+:root {
+    --primary: rgb(0, 36, 0);
+    --elemen: rgb(174, 112, 5);
+    --background: white ;
+    --btn: #007120;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', 'sans-serif';
+    background-color: var(--background);
+    color: var(--background);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    background-color: var(--primary);
+    border-bottom: 2px solid rgb(223, 142, 4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    color: var(--background);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.navbar .navbar-logo span{
+    color: var(--elemen);
+}
+
+.pesan {
+    height: 100vh;
+    background-color: var(--primary);
+    padding: 6rem 1.4rem 7%;
+    color: black;
+    font-family: monospace;
+}
+
+.pesan .pesan-main {
+    background-color: var(--background);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    width: 60rem;
+    margin: 20px auto;
+    border-radius: 1rem;
+    height: 70vh;
+}
+
+.pesan .pesan-main .back {
+    margin: 30px;
+    margin-top: 15px;
+    color: var(--elemen);
+}
+
+.pesan .pesan-judul {   
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--elemen);
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.pesan .pesan-judul h2 {
+    margin-right: 405px;
+    color: black;
+    font-size: 1rem;
+    margin-top: 17px;
+}
+
+.pesan .main {
+    margin: 25px;
+    border-radius: 1rem;
+    background-color: var(--elemen);
+    height: 40vh;
+}
+
+.pesan .waktu {
+    display: flex;
+    margin: 15px;
+    float: left;
+}
+
+.pesan .tgl {
+    margin: 15px;
+    float: right;
+    font-weight: 500;
+}
+.pesan .garis-dua{
+    color: var(--background);
+    display: inline-block;
+    border: 1px solid var(--btn);
+    width: 100%;
+}
+
+.pesan-main .bank {
+    display: flex;
+    margin: 20px;
+}
+
+.pesan-main i {
+    font-size: 2rem;
+}
+
+.pesan-main .bca {
+    font-size: 1rem;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.pesan-main .norek {
+    display: flex;
+    margin: 20px;
+}
+
+.pesan-main .norek p {
+    margin-left: 53px;
+    font-weight: 100;
+}
+ 
+.pesan-main .bnk-lg .nmbr {
+    font-size: 2em;
+    margin-left: 70px;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.pesan-main .bnk-lg {
+    display: flex;
+}
+
+
+.pesan-main .bnk-lg a {
+    margin-left: 20px;
+}
+
+.pesan-main .btn {
+    width: 200px;
+    display: inline-block;
+    height: 30px;
+    background-color: var(--primary);
+    text-align: center;
+    margin-left: 380px;
+    border-radius: 2rem;
+    color: var(--background);
+    padding: 0.4rem;
+    
+}
+
+
+
+
+
+

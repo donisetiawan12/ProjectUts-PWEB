@@ -1,0 +1,234 @@
+:root {
+    --primary: rgb(0, 36, 0);
+    --elemen: rgb(174, 112, 5);
+    --background: white ;
+    --btn: #007120;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', 'sans-serif';
+    background-color: var(--background);
+    color: var(--background);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    background-color: var(--primary);
+    border-bottom: 2px solid rgb(223, 142, 4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    color: var(--background);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.navbar .navbar-logo span{
+    color: var(--elemen);
+}
+
+.pesan {
+    height: 100vh;
+    background-color: var(--primary);
+    padding: 6rem 1.4rem 7%;
+    color: black;
+    font-family: monospace;
+}
+
+.pesan .pesan-main {
+    background-color: var(--background);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    width: 60rem;
+    margin: 20px auto;
+    border-radius: 1rem;
+    height: 80vh;
+}
+
+.pesan .pesan-main .back {
+    margin: 30px;
+    margin-top: 15px;
+    color: var(--elemen);
+}
+
+.pesan .pesan-judul {   
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--elemen);
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.pesan .pesan-judul h2 {
+    margin-right: 390px;
+    color: black;
+    font-size: 1rem;
+    margin-top: 17px;
+}
+
+.pesan .pesan-harus {
+    margin: 25px;
+    margin-bottom: 2rem;
+    margin-top: -30px;
+}
+.pesan .pesan-harus .almt{
+    margin-left: -15px;
+}
+
+.pesan .main {
+    margin: 20px;
+    border-radius: 1rem;
+    background-color: var(--elemen);
+    height: 46vh;
+}
+
+.pesan .waktu {
+    display: flex;
+    margin: 15px;
+    float: left;
+}
+
+.pesan .tgl {
+    margin: 15px;
+    float: right;
+    font-weight: 500;
+}
+.pesan .garis-dua{
+    color: var(--background);
+    display: inline-block;
+    border: 1px solid var(--btn);
+    width: 100%;
+}
+
+.pesan .prdk {
+    display: flex;
+    margin: 15px;
+}
+
+.pesan .prdk img {
+    width: 100px;
+    height: 100px;
+    border-radius: 0.5rem;
+}
+
+.pesan .prdk .mnyk {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 15px;
+}
+.pesan-main .harga p{
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-left: 130px;
+    margin-top: -40px;
+}
+.pesan-main .harga .harga-kan {
+    font-size: 1.2rem;
+    font-weight: 100;
+    float: right;
+    margin-right: 20px;
+    margin-top: -22px;    
+    
+}
+
+.detail {
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(0px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.22);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    height: 30px;
+    padding: 0.4rem;
+}
+
+.detail-pesan {
+    display: flex;
+    margin: 30px;
+    margin-left: 50px;
+}
+
+.detail-pesan .hrga {
+    float: right;
+    margin-left: 560px;
+    font-weight: 600;
+}
+
+.detail-bank {
+    display: flex;
+    margin: 30px;
+    margin-left: 50px;
+    justify-content: space-between;
+}
+
+
+.detail-bank label {
+    margin-left: 390px;
+}
+
+.detail-bank select{
+    width: 150px;
+    height: 30px;
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(0px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.22);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    margin-top: -10px;  
+}
+
+.pesan .btn {
+    font-size: 1rem;
+    margin-left: 600px;
+}
+
+.pesan .btn .ttl {
+    font-weight: 100;
+}
+
+.pesan .btn .rp {
+    font-weight: 700;
+    color: var(--elemen);
+    margin-left: 68px;
+}
+
+.pesan .btn-pesan {
+    background-color: var(--elemen);
+    height: 50px;
+    width: 155px;
+    margin-left: 760px;
+    margin-top: -50px;
+    border-radius: 1rem;
+    padding: 1.1rem;
+    text-align: center;
+}
+
+.pesan .btn-pesan a {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+
+
+
+
+

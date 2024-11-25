@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minyak But But | Doni Setiawan</title>
+    <link rel="stylesheet" href="assets/css/home.css">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--icons-->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+
+    <script src="te"></script>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="home.html" class="navbar-logo">Doni Setiawan <span>Shop</span></a>
+        <div class="navbar-nav">
+            <a href="#home">Home</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Kontak</a>
+        </div>
+            <div class="navbar-extra">
+                <a href="index.html"><i class='bx bx-log-out-circle' ></i></a>
+            </div>
+    </div>
+
+
+    <section class="hero" id="home">
+        <main class="content">
+            <h1>Mari Nikmati Sebotol</h1>
+            <h2>Minyak But-But.</h2>
+            <p>Dengan Sekali Oles Banyak Menghasilkan Manfaat</p>
+            <a href="#pesan" class="btn-beli">Beli Sekarang</a>
+        </main>
+    </section>
+
+    <section class="about" id="about">
+        <h2><span>Tentang</span> Kami </h2>
+        <div class="about-main">
+            <div class="about-img">
+                <img src="./assets/img/tk.png" alt="">
+            </div>
+
+            <div class="about-content">
+                <h3>Kenapa Minyak But-But?</h3>
+                <p>Minyak But-But adalah Minyak herbal yang terbuat dari bahan-bahan alami dan tidak mengandung unsur kimia.</p>
+                <h4>Minyak ini memiliki beragam manfaat, di antaranya: </h4>
+                    <ul>
+                        <li>Sebagai minyak pijat untuk meredakan rasa nyeri dan peradangan.</li>
+                        <li>Mengobati luka bakar dan goresan ringan.</li>
+                        <li>Mengobati gatal-gatal, demam, sengatan serangga, dan memar.</li>
+                        <li>Mengobati batuk.</li>
+                        <li>Mengobati patah tulang, terkilir, dan keseleo.</li>
+                        <li>Mengobati sakit otot pinggang dan badan pegal-pegal.</li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="menu" id="menu">
+        <h2>Menu <span>Kami</span></h2>
+        <div class="menu-main">
+            <table>
+                    <tr>
+                        <th>No</th>
+                        <th>Jenis Minyak But - But</th>
+                        <th>Khasiat</th>
+                        <th>Harga</th>
+                        <th>Aksi</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="./assets/img/minyak-but-but.png" style="width: 100px; height: 100px;" alt="" class="img1"></td>
+                        <td class="khasiat">Keseleo, Terkilir, badan pegal pegal, Patah Tulang, Terkena Air Panas, Gigitan Serangga, Luka Bakar, 
+                            Diare atau Keracunan Makanan, Asma , Stroke, 
+                        </td>
+                        <td>Rp. 35.000,</td>
+                        <td><a href="#pesan" >Beli Sekarang</a></td>
+                    </tr>
+                    <tr >
+                        <td>2</td>
+                        <td><img src="./assets/img/butbut2.png" style="width: 100px; height: 100px;" alt="" class="img2"></td>
+                        <td class="khasiat">Luka Robek, Luka Bakar, Mengobati Sakit Gigi, Tersiram air/minyak panas, Darah Tinggi, 
+                            Luka Koreng, gatal-gatal, Penurun Panas, Keracunan, Ambeien, Susah BAB
+                        </td>
+                        <td>Rp. 50.000,</td>
+                        <td><a href="#pesan" >Beli Sekarang</a></td>
+                    </tr>
+                    <tr >
+                        <td>3</td>
+                        <td><img src="./assets/img/butbut3.png" style="width: 100px; height: 100px;" alt="" class="img3"></td>
+                        <td class="khasiat">Meringankan sakit akibat trauma fisik, mengatasi luka bakar, membantu penyembuhan luka
+                            terbuka maupun tertutup, Meringankan luka memar
+                        </td>
+                        <td>Rp. 100.000,</td>
+                        <td><a href="#pesan" >Beli Sekarang</a></td>
+                    </tr>
+
+                
+            </table>
+        </div>
+    </section>
+
+    <section id="pesan" class="pesan">
+        <h2>Pesan <span>Sekarang</span> </h2>
+        <div class="pesan-main">
+            <form action="pesan.html" method="get">
+                <label class="username" for="">Username : </label>
+                <input type="text" class="username-input" placeholder="Masukan Nama Anda...">
+                <label class="telpon" for="">Telphone : </label>
+                <input class="telpon-input" type="text" placeholder="Masukan Nomor Telephone Anda...">
+                <label class="produk" for="">Pilih Produk :</label>
+                <select name="pilih" class="select-option"> 
+                    <option> --Pilih Produk--</option>
+                    <option>Minyak But - But</option>
+                    <option>Minyak But - But Herba</option>
+                    <option>Minyak Alanabi But - But </option>
+                </select>
+                <label class="total" for=""> Jumlah Pesanan : </label>
+                <input class="total-input" type="number" placeholder="Masukan Jumlah Pesanan Anda...">
+                <textarea class="textarea-main" name="" id="" placeholder="Masukan Alamat Anda..."></textarea>
+                
+                <button class="btn-reset" type="reset">Reset</button>
+                <button class="btn-pesan" type="submit">Pesan Sekarang</button>
+            </form>
+        </div>
+    </section>
+
+
+        <section class="contact" id="contact">
+            <h2>Kontak</h2>
+            <h5>Jika ada kekurangan dalam produk kami</h5>
+            <p>Silahkan Hubungi kami melalui form berikut:</p>
+
+            <div class="contact-form">
+                <form action="kontak.html" method="get">
+                    <div class="username-email">
+                        <input type="text" placeholder="Username..."> 
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="no-tlp">
+                        <input type="number" name="number" id="no-tlp" placeholder="No Telephone...">
+                    </div>
+                    <div class="pesan-textarea">
+                        <textarea class="tulis" name="" id="">Tuliskan Pesan Anda Di Sini...</textarea>
+                    </div>
+                    <div class="btn-sb">
+                        <button type="reset">Reset</button>
+                        <button type="submit" class="kirim">Kirim Pesan</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    
+
+        <footer>
+            <p>&copy; Doni Setiawan . 2024</p>
+            <div class="icon">
+                <a href="" class="facebook"><i class='bx bxl-facebook-square'></i></a>
+                <a href="https://www.instagram.com/donistwaan_/profilecard/?igsh=Y2xodXNrd3YzNHN0" target="_blank" class="instagram"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://github.com/donisetiawan12" target="_blank" class="github"><i class='bx bxl-github'></i></a>
+            </div>
+    
+        </footer>
+</body>
+</html>
